@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Travel Idea Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<h1>Travel Idea Generator</h1>
+		<!-- Wrapper -->
+			<div id="wrapper">
+			    <h2>New York City: Discover Your Ultimate Activity.</h2>
+			</div>
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+					<nav>
+						<ul>
+							<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			    <h4> Which of these do you prefer?</h4>
+                    <form method="post" action="/nyc">
+                      <input type="radio" name="activity" value="Shopping" checked> Shopping<br>
+                      <input type="radio" name="activity" value="Dining"> Dining<br>
+                      <input type="radio" name="activity" value="Sightseeing"> Sightseeing<br> 
+                <br>
+                <h4>Do you want to walk?</h4>
+                      <input type="radio" name="walking" value= "True" checked> Yes<br>
+                      <input type="radio" name="walking" value="False"> No<br>
+                <br>
+                <h4>Do you mind being in large crowds?</h4>
+                      <input type="radio" name="crowds" value="True" checked> Yes<br>
+                      <input type="radio" name="crowds" value="False"> No<br>
+                    <input type="submit" value="Submit">
+                    </form>
+                
+			</div>
+			<!--<h2>{{model.nyc_activity(user.activity, user.walking, user.crowds)}}</h2>-->
+	</body>
+</html>
