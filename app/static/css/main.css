@@ -1416,11 +1416,11 @@ input, select, textarea {
 			-ms-animation: spinner 1s infinite linear !important;
 			animation: spinner 1s infinite linear !important;
 			pointer-events: none;
-			-moz-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility 0.35s;
-			-webkit-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility 0.35s;
-			-ms-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility 0.35s;
-			transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility 0.35s;
-			background-image: url("images/spinner.svg");
+			-moz-transition: top 0.75s ease-in-out, opacity 0s ease-out, visibility 0s;
+			-webkit-transition: top 0.75s ease-in-out, opacity 0s ease-out, visibility 0s;
+			-ms-transition: top 0.75s ease-in-out, opacity 0s ease-out, visibility 0s;
+			transition: top 0.75s ease-in-out, opacity 0s ease-out, visibility 0s;
+			/*background-image: url("images/spinner.svg");*/
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -1437,6 +1437,7 @@ input, select, textarea {
 			top: 75%;
 			visibility: hidden;
 			width: 2em;
+			z-index:0;
 		}
 
 		body.is-preload #wrapper:before {
@@ -1448,9 +1449,11 @@ input, select, textarea {
 			-webkit-transition-delay: 0.5s !important;
 			-ms-transition-delay: 0.5s !important;
 			transition-delay: 0.5s !important;
-			opacity: 0.25;
+			opacity: 0;
 			top: 50%;
-			visibility: visible;
+			visibility: hidden;
+			z-index:0;
+
 		}
 
 /* Header */

@@ -9,8 +9,8 @@
 		<title>Travel Idea Generator</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 		<h1>Travel Idea Generator</h1>
@@ -33,18 +33,19 @@
                       <input type="radio" name="activity" value="Shopping" checked> Shopping<br>
                       <input type="radio" name="activity" value="Dining"> Dining<br>
                       <input type="radio" name="activity" value="Sightseeing"> Sightseeing<br> 
-                <br>
-                <h4>Do you want to walk?</h4>
-                      <input type="radio" name="walking" value= "True" checked> Yes<br>
-                      <input type="radio" name="walking" value="False"> No<br>
-                <br>
-                <h4>Do you mind being in large crowds?</h4>
-                      <input type="radio" name="crowds" value="True" checked> Yes<br>
-                      <input type="radio" name="crowds" value="False"> No<br>
-                    <input type="submit" value="Submit">
-                    </form>
-                
+			                <br>
+			                <h4>Do you want to walk?</h4>
+			                      <input type="radio" name="walking" value= "True" checked> Yes<br>
+			                      <input type="radio" name="walking" value="False"> No<br>
+			                <br>
+			                <h4>Do you mind being in large crowds?</h4>
+			                      <input type="radio" name="crowds" value="True" checked> Yes<br>
+			                      <input type="radio" name="crowds" value="False"> No<br>
+			                    <input type="submit" value="Submit">
+			              </form>
+			    {% if activity_generator %}
+                <h1>{{activity_generator}}</h1>
+                {% endif %}
 			</div>
-			<!--<h2>{{model.nyc_activity(user.activity, user.walking, user.crowds)}}</h2>-->
 	</body>
 </html>
