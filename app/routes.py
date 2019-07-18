@@ -18,3 +18,29 @@ def nyc():
         activity_generator = model.nyc_activity(activity, walking, crowds)
         print(activity_generator)
         return render_template('nyc.html', activity_generator = activity_generator)
+
+@app.route('/rome', methods = ["GET", "POST"])
+def rome():
+    if request.method == "GET": 
+        return render_template('rome.html')
+    else:
+        user = formopener.dict_from(request.form)
+        activity = (user["activity"]).decode('utf-8')
+        walking = (user["walking"]).decode('utf-8')
+        crowds = (user["crowds"]).decode('utf-8')
+        rome_activity_generator = model.rome_activity(activity, walking, crowds)
+        print(rome_activity_generator)
+        return render_template('rome.html', rome_activity_generator = rome_activity_generator)
+
+@app.route('/brussels', methods = ["GET", "POST"])
+def brussels():
+    if request.method == "GET": 
+        return render_template('brussels.html')
+    else:
+        user = formopener.dict_from(request.form)
+        activity = (user["activity"]).decode('utf-8')
+        walking = (user["walking"]).decode('utf-8')
+        crowds = (user["crowds"]).decode('utf-8')
+        brussels_activity_generator = model.brussels_activity(activity, walking, crowds)
+        print(brussels_activity_generator)
+        return render_template('brussels.html', brussels_activity_generator = brussels_activity_generator)

@@ -16,7 +16,7 @@
 		<h1 style = "text-align: center; font-weight:bold">Travel Idea Generator</h1>
 		<!-- Wrapper -->
 			<div id="wrapper">
-			    <h2 style ="font-weight:bold; padding: 0px; text-align: center">New York City: Discover Your Ultimate Activity</h2>
+			    <h2 style ="font-weight:bold; padding: 0px; text-align: center">Brussels: Discover Your Ultimate Activity</h2>
 			</div>
 			<!-- Header -->
 				<header id="header">
@@ -30,7 +30,7 @@
 			</div>
 			    <h3 style = "font-weight:bold; margin-left: 7%;" > Please answer the questions to give us a sense of your traveling preferences. </h3>
 			    <h4 style = "margin-left: 10%;"> Which of these do you prefer?</h4>
-                    <form method="post" action="/nyc" style = "margin-left: 10%;">
+                    <form method="post" action="/brussels" style = "margin-left: 10%;">
                     	<input type="radio" name="activity" value="Shopping" checked> Shopping<br>
                     	<input type="radio" name="activity" value="Dining"> Dining<br>
                     	<input type="radio" name="activity" value="Sightseeing"> Sightseeing<br> 
@@ -45,9 +45,8 @@
                     	<br>
                     	<input type="submit" value="Submit">
                     </form>
-			    {% if activity_generator %}
-                <h2 style = " text-align: center;" > Your Recommended Activity: {{activity_generator}}</h2>
-                
+			    {% if brussels_activity_generator %}
+                <h2 style = " text-align: center;" > Your Recommended Activity: {{brussels_activity_generator}}</h2>
                 {% endif %}
 			</div>
 	</body>
