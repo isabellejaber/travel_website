@@ -27,10 +27,10 @@
 						</ul>
 					</nav>
 				</header>
-			</div>
+			<div>
 			    <h3 style = "font-weight:bold; margin-left: 7%;" > Please answer the questions to give us a sense of your traveling preferences. </h3>
-			    <h4 style = "margin-left: 10%;"> Which of these do you prefer?</h4>
-                    <form method="post" action="/nyc" style = "margin-left: 10%;">
+                    <form method="post" action="/nyc" style = "margin-left: 10%; display: inline-block;">
+                    	<h4 style = "margin-left: 10%;"> Which of these do you prefer?</h4>
                     	<input type="radio" name="activity" value="Shopping" checked> Shopping<br>
                     	<input type="radio" name="activity" value="Dining"> Dining<br>
                     	<input type="radio" name="activity" value="Sightseeing"> Sightseeing<br> 
@@ -45,6 +45,8 @@
                     	<br>
                     	<input type="submit" value="Submit">
                     </form>
+                    <img style = "display: inline-block; width: 40%;  margin-left: 15%; margin-bottom: 5%" src="{{pic}}"></img>
+					
 			    {% if activity_generator %}
                 <h2 style = " text-align: center;" > Your Recommended Activity: {{activity_generator}}</h2>
                 {% endif %}

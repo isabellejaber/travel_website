@@ -16,8 +16,9 @@ def nyc():
         walking = (user["walking"]).decode('utf-8')
         crowds = (user["crowds"]).decode('utf-8')
         activity_generator = model.nyc_activity(activity, walking, crowds)
+        pic = model.image(activity)
         print(activity_generator)
-        return render_template('nyc.html', activity_generator = activity_generator)
+        return render_template('nyc.html', activity_generator = activity_generator, pic = pic)
 
 @app.route('/rome', methods = ["GET", "POST"])
 def rome():

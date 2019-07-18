@@ -1,3 +1,14 @@
+def image(activity):
+    if activity == "Shopping":
+        return "https://cdn.vox-cdn.com/thumbor/pkA5HyV81YeDEWwLxbgreubS8W8=/0x0:6048x4032/1200x800/filters:focal(3747x1737:4713x2703)/cdn.vox-cdn.com/uploads/chorus_image/image/58384919/GettyImages_463173435.0.jpg"
+    elif activity == "Dining":
+        return "https://manofmany.com/wp-content/uploads/2016/09/Fine-Dining.jpg"
+    elif activity == "Sightseeing":
+        return "https://www.holidayrepresentations.com/blog/wp-content/uploads/2018/03/multiple-places-around-the-world.jpg"
+    else:
+        return ""
+        
+
 def nyc_activity(activity, walking, crowds):
     if activity == "Shopping":
         if walking == "True" and crowds == "False":
@@ -48,7 +59,7 @@ def rome_activity(activity, walking, crowds):
         elif walking == "True" and crowds == "True":
             return "Explore the Spanish Steps and then head to Ginger Sapori e Salute for dinner"
         else:
-            return 
+            return "Walk through the smaller streets around the Trevi Fountain and try a local panino shop"
     elif activity == "Sightseeing":
         if walking == "True" and crowds == "False":
             return "Go for a bike ride or walk along the Via Appia"
