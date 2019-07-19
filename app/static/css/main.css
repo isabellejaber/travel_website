@@ -1620,6 +1620,9 @@ input, select, textarea {
 			position: relative;
 			grid-template-columns: auto auto auto;
 		}
+		#quiz {
+			grid-template-columns: auto auto;
+		}
 
 			#main .thumb:after {
 				background-image: -moz-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
